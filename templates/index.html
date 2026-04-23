@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BharatSense - Real-Time Weather & Safety Monitoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+
+<!-- Navbar -->
+<nav class="flex justify-between items-center p-6 backdrop-blur-lg bg-white/5">
+
+    <!-- Logo + Name -->
+    <div class="flex items-center space-x-3">
+        <img src="https://sahilhansda.sirv.com/Images/maintrans.png" alt="logo" class="w-8 h-8 object-contain">
+        <h1 class="text-xl font-bold">BharatSense</h1>
+    </div>
+
+    <!-- Links -->
+    <div class="space-x-6">
+        <a href="#" class="hover:text-cyan-400">Home</a>
+        <a href="#" class="hover:text-cyan-400">Weather</a>
+        <a href="#" class="hover:text-cyan-400">News</a>
+    </div>
+
+</nav>
+
+<!-- Hero -->
+<section class="text-center mt-10">
+    <h1 class="text-5xl font-bold">Stay Safe. Stay Smart.</h1>
+    <p class="opacity-70 mt-3">Weather + Alerts + Global News</p>
+
+    <button onclick="getLocation()" 
+        class="mt-6 px-6 py-3 bg-cyan-500 rounded-xl hover:bg-cyan-600 transition">
+        Detect Location
+    </button>
+</section>
+
+<!-- Weather -->
+<section class="p-10">
+    <div class="bg-white/10 backdrop-blur-xl p-6 rounded-2xl shadow-xl text-center">
+        <h2 class="text-2xl mb-4">🌤 Weather</h2>
+        <div id="weather"></div>
+        <img id="icon" class="mx-auto w-24 mt-3"/>
+    </div>
+</section>
+
+<!-- News -->
+<section class="p-10">
+    <h2 class="text-3xl mb-6">🚨 Latest News</h2>
+    <div id="news" class="grid md:grid-cols-3 gap-6"></div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center p-6 opacity-60">
+    © 2026 BharatSense
+</footer>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
